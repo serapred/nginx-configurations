@@ -1,0 +1,8 @@
+# example proxy server, disabled by ext.
+include upstream/example.conf
+
+server {
+    location / {
+        proxy_pass http://backend;
+    }
+}
